@@ -9,13 +9,13 @@
     getRandomQuote();
 
     //  on click on the new quote loads getRandomQuote function
-    $('#newQuote').on('click',function() {
+    $('#newQuote').on('click', function() {
       getRandomQuote();
     });
 
     // on click opens a new window with the tweet
-    $('#newTweet').on('click',function() {
-      window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " -" +randomAuthor);
+    $('#newTweet').on('click', function() {
+      window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " -" + randomAuthor);
     });
 
 
@@ -33,7 +33,7 @@
         randomAuthor = data.quoteAuthor;
 
         // setting the info into the html
-        $("#quote").html(randomQuote);
+        $("#quote").html('<i class="fa fa-quote-left"></i> ' + randomQuote + ' <i class="fa fa-quote-right"></i>');
         $("#author").html('-' + randomAuthor);
       });
 

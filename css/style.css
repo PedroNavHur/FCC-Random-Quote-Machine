@@ -3,8 +3,9 @@
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 .fa:hover {
@@ -15,4 +16,17 @@
 .fa-heart {
   /* heart color*/
   color: #E91E63;
+}
+
+#index-banner {
+  height: calc(100vh - 175.5px);
+  padding-top: 20vh;
+}
+
+body {
+  background-color: #fff;
+}
+
+h6 {
+  font-style: italic;
 }
