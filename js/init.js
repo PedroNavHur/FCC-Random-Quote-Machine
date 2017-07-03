@@ -5,12 +5,19 @@
     var randomQuote;
     var randomAuthor;
 
-    // we use the getRandomQuote Function
+    // we use the getRandomQuote function
     getRandomQuote();
 
+    //  on click on the new quote loads getRandomQuote function
     $('#newQuote').on('click',function() {
       getRandomQuote();
     });
+
+    // on click opens a new window with the tweet
+    $('#newTweet').on('click',function() {
+      window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " -" +randomAuthor);
+    });
+
 
     //  function to get a Random Quote
     function getRandomQuote() {
@@ -27,7 +34,7 @@
 
         // setting the info into the html
         $("#quote").html(randomQuote);
-        $("#author").html(randomAuthor);
+        $("#author").html('-' + randomAuthor);
       });
 
     }
